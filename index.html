@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gustavo Bardusco — Portfolio</title>
+<meta name="description" content="Portfolio de Gustavo Bardusco, docente de TI e desenvolvedor full-stack. Uma viagem no tempo pela minha carreira.">
+<meta name="theme-color" content="#05030f">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%23101c82'/%3E%3Crect x='2' y='2' width='12' height='12' fill='%23f0cf5a'/%3E%3Crect x='7' y='4' width='2' height='5' fill='%23101c82'/%3E%3Crect x='7' y='8' width='4' height='2' fill='%23101c82'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+
+<a class="skip" href="#contato">Ir para o contato</a>
+
+<!-- Navegação (menu estilo Chrono Trigger) -->
+<nav id="timeline" class="timeline" aria-label="Linha do tempo">
+  <ol>
+    <li><a href="#inicio" data-i="0"><span class="cur">▶</span><span class="lbl">Início<small>Fim do Tempo</small></span></a></li>
+    <li><a href="#origens" data-i="1"><span class="cur">▶</span><span class="lbl">Origens<small>65.000.000 a.C.</small></span></a></li>
+    <li><a href="#moodle" data-i="2"><span class="cur">▶</span><span class="lbl">Moodle<small>600 d.C.</small></span></a></li>
+    <li><a href="#docencia" data-i="3"><span class="cur">▶</span><span class="lbl">Docência<small>1000 d.C.</small></span></a></li>
+    <li><a href="#saber" data-i="4"><span class="cur">▶</span><span class="lbl">Saber<small>12.000 a.C.</small></span></a></li>
+    <li><a href="#zerocharts" data-i="5"><span class="cur">▶</span><span class="lbl">ZeroCharts<small>2300 d.C.</small></span></a></li>
+    <li><a href="#contato" data-i="6"><span class="cur">▶</span><span class="lbl">Contato<small>Fim do Tempo</small></span></a></li>
+  </ol>
+</nav>
+
+<!-- Overlay da viagem no tempo -->
+<div id="overlay" aria-hidden="true">
+  <canvas id="warp-canvas"></canvas>
+  <div id="year-box" class="win">
+    <div class="year-top">Viajando para…</div>
+    <div id="year" class="year">—</div>
+    <div id="dest" class="year-dest"></div>
+  </div>
+  <div id="flash"></div>
+</div>
+
+<main id="main">
+
+<!-- 0 · FIM DO TEMPO / INÍCIO -->
+<section class="era hero" id="inicio" data-era="end" data-scene="end" data-year="1" data-year-label="Fim do Tempo" data-name="Fim do Tempo" data-hue="270">
+  <div class="scene"></div>
+  <div class="particles" data-p="stars"></div>
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="win hero-win reveal">
+        <p class="eyebrow">Fim do Tempo</p>
+        <h1>Gustavo<br>Bardusco</h1>
+        <p class="role">Docente de TI <span>·</span> Desenvolvedor Full-Stack</p>
+        <p class="dialog" data-type><b>Gustavo:</b> Transformo necessidades reais em código — da sala de aula ao SaaS em produção. Suba na Epoch e role a página para viajar pela minha linha do tempo.</p>
+        <div class="btns">
+          <a class="btn primary" href="#origens" data-go>▶ Iniciar viagem</a>
+          <a class="btn" href="#contato" data-go>Falar comigo</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-hint" aria-hidden="true">Role ▼</div>
+</section>
+
+<div class="warp" data-from="0"></div>
+
+<!-- 1 · 65.000.000 a.C. · ORIGENS -->
+<section class="era" id="origens" data-era="prehist" data-scene="prehist" data-year="-65000000" data-year-label="65.000.000 a.C." data-name="Era das Origens" data-hue="18">
+  <div class="scene"></div>
+  <div class="particles" data-p="embers"></div>
+  <div class="wrap">
+    <header class="era-head reveal">
+      <span class="win chip">65.000.000 a.C.</span>
+      <h2>Era das Origens</h2>
+      <p class="sub">2017 – 2020 · Os primeiros códigos</p>
+    </header>
+    <div class="win dialog-win reveal">
+      <p class="dialog" data-type><b>Gustavo:</b> Tudo começou aqui: o curso técnico, os primeiros sites e uma agência própria para tirar ideias do papel.</p>
+    </div>
+    <div class="grid two">
+      <article class="win card reveal">
+        <p class="meta">out/2018 – mai/2020 · 1 ano e 8 meses</p>
+        <h3>Octa Marketing</h3>
+        <p class="org">Sócio proprietário</p>
+        <ul class="bul">
+          <li>Fundei e geri uma agência de desenvolvimento web.</li>
+          <li>Sites, sistemas web e templates personalizados para WordPress, com PHP e JavaScript.</li>
+          <li>Participação na gestão, na estratégia e no controle financeiro da empresa.</li>
+        </ul>
+        <div class="tags"><span>WordPress</span><span>PHP</span><span>JavaScript</span><span>Gestão</span></div>
+      </article>
+      <article class="win card reveal">
+        <p class="meta">mar/2017 – out/2018</p>
+        <h3>Técnico em Informática para Internet</h3>
+        <p class="org">Senac São Paulo</p>
+        <ul class="bul">
+          <li>Base de desenvolvimento web que abriu caminho para tudo o que veio depois.</li>
+          <li>Início da relação com o Senac, que anos depois voltaria como docente.</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<div class="warp" data-from="1"></div>
+
+<!-- 2 · 600 d.C. · MOODLE -->
+<section class="era" id="moodle" data-era="medieval" data-scene="medieval" data-year="600" data-year-label="600 d.C." data-name="Reino do Moodle" data-hue="205">
+  <div class="scene"></div>
+  <div class="particles" data-p="motes"></div>
+  <div class="wrap">
+    <header class="era-head reveal">
+      <span class="win chip">600 d.C.</span>
+      <h2>O Reino do Moodle</h2>
+      <p class="sub">2019 – 2025 · Unisepe Educacional</p>
+    </header>
+    <div class="win dialog-win reveal">
+      <p class="dialog" data-type><b>Gustavo:</b> Por 6 anos e 9 meses cuidei do ambiente virtual de aprendizagem do Grupo Unisepe. Um reino inteiro de cursos, alunos e professores.</p>
+    </div>
+    <div class="stats reveal">
+      <div class="win stat"><b>20</b><span>cursos</span></div>
+      <div class="win stat"><b>4</b><span>modalidades</span></div>
+      <div class="win stat"><b>14.500+</b><span>usuários</span></div>
+      <div class="win stat"><b>6a 9m</b><span>de reino</span></div>
+    </div>
+    <article class="win card reveal">
+      <p class="meta">fev/2019 – out/2025</p>
+      <h3>Auxiliar de Coordenadoria de Tecnologia Educacional</h3>
+      <p class="org">Unisepe Educacional · Centro de Tecnologias Educacionais</p>
+      <ul class="bul cols">
+        <li>Gestão do Moodle: publicação de materiais e suporte técnico e pedagógico.</li>
+        <li>Edição de videoaulas e organização de conteúdos didáticos.</li>
+        <li>Atendimento a alunos, professores, coordenadores e gestores.</li>
+        <li>Representação do setor em comitivas avaliativas do MEC.</li>
+        <li>Planilhas e relatórios acadêmicos.</li>
+        <li>Apoio ao Núcleo de EAD e reuniões de gestão estratégica.</li>
+      </ul>
+      <div class="tags"><span>Moodle</span><span>EAD</span><span>Edtech</span><span>Suporte</span></div>
+    </article>
+  </div>
+</section>
+
+<div class="warp" data-from="2"></div>
+
+<!-- 3 · 1000 d.C. · DOCÊNCIA -->
+<section class="era" id="docencia" data-era="present" data-scene="present" data-year="1000" data-year-label="1000 d.C." data-name="Era Presente" data-hue="140">
+  <div class="scene"></div>
+  <div class="particles" data-p="motes"></div>
+  <div class="wrap">
+    <header class="era-head reveal">
+      <span class="win chip">1000 d.C.</span>
+      <h2>A Era Presente</h2>
+      <p class="sub">2022 – hoje · Docência e desenvolvimento</p>
+    </header>
+    <div class="win dialog-win reveal">
+      <p class="dialog" data-type><b>Gustavo:</b> Hoje divido meu tempo entre a docência em cursos livres e técnicos de TI, projetos como autônomo e o ZeroCharts.</p>
+    </div>
+    <div class="grid two">
+      <article class="win card reveal current">
+        <p class="meta"><em>Atual</em> mai/2026 – presente</p>
+        <h3>Monitor de Educação Profissional</h3>
+        <p class="org">Senac São Paulo · Registro</p>
+        <ul class="bul">
+          <li>Professor de TI em cursos livres e técnicos, com foco no desenvolvimento profissional dos alunos e na aproximação com o mercado.</li>
+          <li>Aulas de desenvolvimento de sistemas (Web, Desktop e Mobile), Office e design (Adobe).</li>
+          <li>Metodologias ativas que incentivam autonomia e resolução de problemas reais.</li>
+        </ul>
+      </article>
+      <article class="win card reveal">
+        <p class="meta">nov/2025 – mai/2026</p>
+        <h3>Auxiliar Docente</h3>
+        <p class="org">FATEC Registro</p>
+        <ul class="bul">
+          <li>Gestão e preparação dos laboratórios de TI: equipamentos, hardware e software.</li>
+          <li>Suporte aos alunos nas aulas práticas e colaboração com os professores.</li>
+          <li>Segurança, organização e padronização dos ambientes técnicos.</li>
+        </ul>
+      </article>
+      <article class="win card reveal">
+        <p class="meta">out – dez/2023 &nbsp;·&nbsp; abr – jun/2022</p>
+        <h3>Professor convidado</h3>
+        <p class="org">Senac São Paulo</p>
+        <ul class="bul">
+          <li>Programação web, banco de dados e PHP.</li>
+          <li>Orientação dos Projetos Integradores.</li>
+          <li>Registro de presenças e avaliações, com feedbacks individuais.</li>
+        </ul>
+      </article>
+      <article class="win card reveal">
+        <p class="meta">Frentes de atuação</p>
+        <h3>Party atual</h3>
+        <ul class="bul">
+          <li>Ensino de Tecnologia</li>
+          <li>Desenvolvimento Web (PHP, JavaScript, Python, React)</li>
+          <li>Consultoria e gestão de Ambientes Virtuais de Aprendizagem (Moodle)</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<div class="warp" data-from="3"></div>
+
+<!-- 4 · 12.000 a.C. · ZEAL -->
+<section class="era" id="saber" data-era="zeal" data-scene="zeal" data-year="-12000" data-year-label="12.000 a.C." data-name="Reino de Zeal" data-hue="255">
+  <div class="scene"></div>
+  <div class="particles" data-p="snow"></div>
+  <div class="wrap">
+    <header class="era-head reveal">
+      <span class="win chip">12.000 a.C.</span>
+      <h2>Reino de Zeal</h2>
+      <p class="sub">Formação, certificações e competências</p>
+    </header>
+    <div class="win dialog-win reveal">
+      <p class="dialog" data-type><b>Gustavo:</b> O conhecimento flutua acima do tempo: é o que carrego em todas as outras eras.</p>
+    </div>
+    <div class="grid three">
+      <article class="win card reveal">
+        <h3>Formação acadêmica</h3>
+        <ul class="bul">
+          <li><strong>Pós-graduação Lato Sensu</strong> em Docência do Ensino Superior<br><small>Unisepe · out/2024 – abr/2025</small></li>
+          <li><strong>Bacharelado em Tecnologia da Informação</strong><br><small>Univesp · fev/2020 – dez/2022</small></li>
+          <li><strong>Técnico em Informática para Internet</strong><br><small>Senac São Paulo · 2017 – 2018</small></li>
+        </ul>
+      </article>
+      <article class="win card reveal">
+        <h3>Certificações</h3>
+        <ul class="bul">
+          <li>Aprenda a programar em Python com Orientação a Objetos</li>
+          <li>Fundamentos para Desenvolvimento de Software (Microsoft e LinkedIn)</li>
+          <li>Python: avance na Orientação a Objetos e consuma API</li>
+          <li>Artificial Intelligence Fundamentals</li>
+          <li>Python: crie a sua primeira aplicação</li>
+        </ul>
+      </article>
+      <article class="win card reveal">
+        <h3>Competências</h3>
+        <div class="tags big">
+          <span>Desenvolvimento de SaaS</span><span>Edtech</span><span>Front-end</span>
+          <span>PHP</span><span>JavaScript</span><span>TypeScript</span><span>Python</span><span>React</span><span>Laravel</span>
+          <span>PostgreSQL</span><span>Moodle</span><span>Docker</span>
+        </div>
+        <p class="meta" style="margin-top:18px">Idiomas</p>
+        <ul class="bul"><li>Inglês — Full Professional</li><li>Português — nativo</li></ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<div class="warp" data-from="4"></div>
+
+<!-- 5 · 2300 d.C. · ZEROCHARTS -->
+<section class="era" id="zerocharts" data-era="future" data-scene="future" data-year="2300" data-year-label="2300 d.C." data-name="O Futuro" data-hue="170">
+  <div class="scene"></div>
+  <div class="particles" data-p="rain"></div>
+  <div class="wrap">
+    <header class="era-head reveal">
+      <span class="win chip">2300 d.C.</span>
+      <h2>O Futuro: ZeroCharts</h2>
+      <p class="sub">abr/2026 – presente · Cofundador e Desenvolvedor Full-Stack</p>
+    </header>
+    <div class="win dialog-win reveal">
+      <p class="dialog" data-type><b>Gustavo:</b> Uma plataforma para criar, acompanhar e compartilhar paradas musicais semanais, integrada ao Last.fm. Criada com dois sócios e já em produção.</p>
+    </div>
+    <div class="stats reveal">
+      <div class="win stat"><b>9.700+</b><span>usuários</span></div>
+      <div class="win stat"><b>652</b><span>assinantes Pro</span></div>
+      <div class="win stat"><b>3</b><span>idiomas</span></div>
+      <div class="win stat"><b>3</b><span>sócios</span></div>
+    </div>
+    <div class="grid two">
+      <article class="win card reveal">
+        <h3>O que eu faço lá</h3>
+        <ul class="bul">
+          <li>Desenvolvimento full-stack: API em Laravel 12 (PHP 8.2) com PostgreSQL e SPA em React, TypeScript e Vite.</li>
+          <li>Assinaturas e cobrança dos planos Pro, login com Google OAuth e integração com o Last.fm.</li>
+          <li>Cache e estatísticas offline no navegador (IndexedDB), com interface em português, inglês e espanhol.</li>
+          <li>Infraestrutura com Docker e Nginx, CI/CD no GitHub Actions e monitoramento com Sentry.</li>
+          <li>Participação nas decisões de produto e de negócio.</li>
+        </ul>
+      </article>
+      <article class="win card reveal">
+        <h3>Stack</h3>
+        <div class="tags big">
+          <span>Laravel 12</span><span>PHP 8.2</span><span>PostgreSQL</span><span>React</span><span>TypeScript</span><span>Vite</span>
+          <span>Docker</span><span>Nginx</span><span>GitHub Actions</span><span>Sentry</span><span>Google OAuth</span><span>Last.fm</span><span>IndexedDB</span>
+        </div>
+        <div class="btns" style="margin-top:22px">
+          <a class="btn primary" href="https://zerocharts.com.br" target="_blank" rel="noopener">▶ Visitar o ZeroCharts</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<div class="warp" data-from="5"></div>
+
+<!-- 6 · FIM DO TEMPO / CONTATO -->
+<section class="era hero" id="contato" data-era="end" data-scene="end" data-year="1" data-year-label="Fim do Tempo" data-name="Fim do Tempo" data-hue="270">
+  <div class="scene"></div>
+  <div class="particles" data-p="stars"></div>
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="win hero-win reveal">
+        <p class="eyebrow">Fim do Tempo</p>
+        <h2 class="big">Vamos construir algo?</h2>
+        <p class="dialog" data-type><b>Gustavo:</b> Ajudo empresas e empreendedores a tirar ideias do papel, com aplicações web úteis, escaláveis e bem documentadas. Fale comigo para projetos web ou consultoria em Moodle.</p>
+        <div class="btns col">
+          <a class="btn primary" href="mailto:bardusco.gustavo@gmail.com">✉ bardusco.gustavo@gmail.com</a>
+          <a class="btn" href="https://www.linkedin.com/in/gbardusco" target="_blank" rel="noopener">LinkedIn · /in/gbardusco</a>
+          <a class="btn" href="https://github.com/gbardusco" target="_blank" rel="noopener">GitHub · /gbardusco</a>
+          <a class="btn ghost" href="#inicio" data-go>↺ Voltar ao início do tempo</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="foot">© <span id="yr">2026</span> Gustavo Bardusco · Inspirado em Chrono Trigger (Square, 1995) · Projeto de fã, sem fins comerciais</footer>
+</section>
+
+</main>
+
+<script src="art.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
