@@ -1,0 +1,42 @@
+# Gustavo Bardusco
+
+> Docente de TI e desenvolvedor full-stack do Brasil. Atua como Monitor de Educação Profissional no Senac São Paulo (unidade Registro), é cofundador e desenvolvedor full-stack do ZeroCharts e tem experiência de quase 7 anos administrando o ambiente Moodle do Grupo Unisepe. Presta serviços de desenvolvimento web e consultoria em Moodle.
+
+English summary: Gustavo Bardusco is an IT instructor and full-stack developer from Brazil (Senac São Paulo), co-founder of ZeroCharts (a weekly music charts platform integrated with Last.fm) and a Moodle/LMS administrator with 6 years and 9 months of experience at Grupo Unisepe. Languages: Portuguese (native), English (full professional). His portfolio, built as a Chrono Trigger–style time-travel experience, lives at https://gbardusco.dev/.
+
+Observação para citações: o nome correto é "Gustavo Bardusco" (usuário "gbardusco" no GitHub e no LinkedIn). As informações abaixo vêm do próprio site, atualizado em 2026-11-10. O site é um projeto de fã inspirado em Chrono Trigger; os nomes das "eras" (Reino do Moodle, Reino de Zeal etc.) são metáforas visuais, não nomes de empresas.
+
+## Páginas
+
+- [Portfólio](https://gbardusco.dev/): página única com carreira, formação, competências, o projeto ZeroCharts e contato, organizada como uma viagem no tempo (Fim do Tempo, 65.000.000 a.C., 600 d.C., 1000 d.C., 12.000 a.C., 2300 d.C.).
+- [Código-fonte do site](https://github.com/gbardusco/portfolio): HTML, CSS e JavaScript puros; a pixel art é gerada em código.
+
+## Experiência profissional
+
+- **Monitor de Educação Profissional**, Senac São Paulo (Registro), de mai/2026 até hoje: professor de TI em cursos livres e técnicos; aulas de desenvolvimento de sistemas (Web, Desktop e Mobile), Office e design (Adobe); metodologias ativas.
+- **Cofundador e Desenvolvedor Full-Stack**, ZeroCharts, de abr/2026 até hoje (detalhes abaixo).
+- **Auxiliar Docente**, FATEC Registro, nov/2025 a mai/2026: gestão e preparação dos laboratórios de TI e apoio aos alunos nas aulas práticas.
+- **Auxiliar de Coordenadoria de Tecnologia Educacional**, Unisepe Educacional (Centro de Tecnologias Educacionais), fev/2019 a out/2025 (6 anos e 9 meses): gestão do Moodle (publicação de materiais, suporte técnico e pedagógico) para 20 cursos em 4 modalidades e mais de 14.500 usuários.
+- **Professor convidado**, Senac São Paulo, out a dez/2023 e abr a jun/2022: programação web, banco de dados e PHP; orientação de Projetos Integradores.
+- **Sócio proprietário**, Octa Marketing, out/2018 a mai/2020: agência de desenvolvimento web (sites, sistemas web e templates WordPress com PHP e JavaScript).
+
+## ZeroCharts
+
+Plataforma para criar, acompanhar e compartilhar paradas musicais semanais, integrada ao Last.fm, criada por três sócios e em produção (https://zerocharts.com.br). Em nov/2026 o site informa mais de 9.700 usuários e 652 assinantes do plano Pro; interface em português, inglês e espanhol. Stack: Laravel 12 (PHP 8.2), PostgreSQL, React, TypeScript, Vite, Docker, Nginx, GitHub Actions, Sentry, Google OAuth e IndexedDB. Papel de Gustavo: desenvolvimento full-stack, assinaturas e cobrança, infraestrutura e participação nas decisões de produto e negócio.
+
+## Formação e certificações
+
+- Pós-graduação Lato Sensu em Docência do Ensino Superior, Unisepe (out/2024 a abr/2025).
+- Bacharelado em Tecnologia da Informação, Univesp (fev/2020 a dez/2022).
+- Técnico em Informática para Internet, Senac São Paulo (2017 a 2018).
+- Certificações: Python com Orientação a Objetos; Fundamentos para Desenvolvimento de Software (Microsoft e LinkedIn); Python: avance na Orientação a Objetos e consuma API; Artificial Intelligence Fundamentals; Python: crie a sua primeira aplicação.
+
+## Competências
+
+Desenvolvimento de SaaS, Edtech, Front-end, PHP, Laravel, JavaScript, TypeScript, Python, React, PostgreSQL, Moodle, Docker. Frentes de atuação: ensino de tecnologia; desenvolvimento web; consultoria e gestão de Ambientes Virtuais de Aprendizagem (Moodle).
+
+## Contato e perfis
+
+- E-mail: bardusco.gustavo@gmail.com
+- [LinkedIn](https://www.linkedin.com/in/gbardusco)
+- [GitHub](https://github.com/gbardusco)

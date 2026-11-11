@@ -46,18 +46,6 @@ function buildScenes() {
   });
 }
 
-/* ícone da aba: a Epoch vista de trás */
-function buildFavicon() {
-  try {
-    const f = Art.epochRear().frames[0].toCanvas(), c = document.createElement('canvas');
-    c.width = c.height = 48;
-    const x = c.getContext('2d'); x.fillStyle = '#101c82'; x.fillRect(0, 0, 48, 48); x.drawImage(f, 0, 4);
-    let l = $('link[rel="icon"]');
-    if (!l) { l = document.createElement('link'); l.rel = 'icon'; document.head.appendChild(l); }
-    l.type = 'image/png'; l.href = c.toDataURL('image/png');
-  } catch (e) { /* mantém o ícone padrão */ }
-}
-
 /* ------------------------------------------------------ partículas ---- */
 function buildParticles() {
   const count = { embers: 26, motes: 24, snow: 56, rain: 64, stars: 46 };
@@ -482,7 +470,7 @@ function onResize() { setScale(); if (!REDUCE) { sizeCanvas(); } onScroll(); }
 
 function init() {
   setScale();
-  buildScenes(); buildFavicon(); buildParticles();
+  buildScenes(); buildParticles();
   initReveal(); initType(); initLinks();
   const yr = $('#yr'); if (yr) yr.textContent = new Date().getFullYear();
   if (!REDUCE && ov && cv) { sizeCanvas(); seedStreaks(); }
