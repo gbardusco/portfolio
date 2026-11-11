@@ -180,6 +180,33 @@ function scrollToY(y) {
   })(t0);
 }
 ['wheel', 'touchstart', 'keydown', 'mousedown'].forEach(function (ev) { window.addEventListener(ev, cancelScroll, { passive: true }); });
+/* roda do mouse: rolagem suave com inércia, limitada (não "dispara" a viagem sem querer) */
+let wTarget = 0, wActive = false, wLast = 0;
+function inTextZone(y) {                               // o centro da tela (em y) está dentro de uma era?
+  const mid = y + window.innerHeight / 2;
+  return eras.some(function (e) { const t = e.getBoundingClientRect().top + window.scrollY; return mid >= t && mid <= t + e.offsetHeight; });
+}
+function wStep(now) {
+  const dt = clamp((now - wLast) / 1000, 0.001, 0.05); wLast = now;
+  const d = wTarget - window.scrollY;
+  if (Math.abs(d) < 1) { window.scrollTo(0, wTarget); wActive = false; return; }
+  let step = d * (1 - Math.exp(-dt * 8));
+  if (Math.abs(step) < 1) step = Math.sign(d);
+  window.scrollTo(0, window.scrollY + step);
+  requestAnimationFrame(wStep);
+}
+function onWheel(e) {
+  if (REDUCE || e.ctrlKey || e.defaultPrevented || Math.abs(e.deltaX) > Math.abs(e.deltaY)) return;   // zoom, horizontal e movimento reduzido: nativo
+  e.preventDefault(); cancelScroll();
+  const vh = window.innerHeight, max = document.documentElement.scrollHeight - vh;
+  const dy = e.deltaMode === 1 ? e.deltaY * 32 : e.deltaMode === 2 ? e.deltaY * vh : e.deltaY;
+  if (!wActive) wTarget = window.scrollY;
+  const k = inTextZone(wTarget) ? 0.45 : 0.9;           // texto: bem mais devagar; trecho da viagem: quase normal
+  wTarget = clamp(wTarget + clamp(dy, -150, 150) * k, 0, max);
+  wTarget = clamp(wTarget, window.scrollY - vh * 0.5, window.scrollY + vh * 0.5);   // sem acumular embalo demais
+  if (!wActive) { wActive = true; wLast = performance.now(); requestAnimationFrame(wStep); }
+}
+window.addEventListener('wheel', onWheel, { passive: false });
 function go(el, hash) {
   scrollToY(el.getBoundingClientRect().top + window.scrollY);
   try { history.replaceState(null, '', hash); } catch (e) { /* file:// em alguns navegadores */ }
@@ -313,11 +340,12 @@ let raf = 0, last = 0, lastY = window.scrollY, energy = 0, face = 1, phase = 0, 
 let lastYearTxt = '', lastDest = '', lastHud = -1;
 const hist = [];
 
+const LEAD = 0.45;      // a viagem só começa quando o início do espaço de scroll chega a 45% da altura da tela (dá tempo de ler o fim do texto)
 function findWarp() {
-  const vh = window.innerHeight;
+  const a = window.innerHeight * LEAD;
   for (let i = 0; i < warps.length; i++) {
     const r = warps[i].getBoundingClientRect();
-    if (r.top < vh && r.bottom > 0) return { i: i, p: (vh - r.top) / (r.height + vh) };
+    if (r.top < a && r.bottom > 0) return { i: i, p: (a - r.top) / (r.height + a) };
   }
   return null;
 }

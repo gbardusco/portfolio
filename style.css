@@ -140,7 +140,7 @@ ul,ol{padding:0;list-style:none}
 .foot{position:absolute;bottom:12px;left:0;right:0;z-index:3;text-align:center;font-size:19px;color:#9aa3d6;padding:0 16px}
 
 /* ============ Warp (espaço de scroll) ============ */
-.warp{height:260vh;position:relative;background:#000}
+.warp{height:300vh;position:relative;background:#000}
 
 /* ============ Overlay da viagem ============ */
 #overlay{position:fixed;inset:0;z-index:90;visibility:hidden;pointer-events:none;background:transparent;overflow:hidden}
